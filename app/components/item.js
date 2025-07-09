@@ -1,5 +1,5 @@
 import { useRouter } from "next/navigation";
-import styles from "../category/all/all.module.css";
+import styles from "../category/[category]/category.module.css";
 
 export default function Item({ item }) {
   const router = useRouter();

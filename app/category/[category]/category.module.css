@@ -1,3 +1,4 @@
+/* 기존 all.module.css 복사본 */
 .container {
     margin-top: 100px;
     display: flex;
@@ -20,6 +21,28 @@
     align-items: center;
     gap: 10px;
     cursor: pointer;
+    position: relative;
+  }
+
+  .soldItem .gridItem {
+    filter: brightness(0.5);
+  }
+
+  .soldOverlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ff2222;
+    font-size: 2.2rem;
+    font-weight: 900;
+    background: rgba(255,255,255,0.0);
+    padding: 0.5em 1em;
+    border-radius: 8px;
+    z-index: 2;
+    pointer-events: none;
+    text-shadow: 1px 1px 8px #fff, 1px 1px 8px #fff;
+    letter-spacing: 0.1em;
   }
   
   .gridItem {
@@ -44,27 +67,4 @@
   }
   .imageWrapper {
     position: relative;
-    width: 100%;
   }
-  
-  .soldItem {
-    opacity: 0.9;
-  }
-  
-  .soldItem .gridItem {
-    filter: grayscale(40%) brightness(60%);
-  }
-  
-  .soldOverlay {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: red;
-    font-weight: bold;
-    font-size: 20px;
-    padding: 6px 12px;
-    border-radius: 4px;
-    z-index: 2;
-  }
-  

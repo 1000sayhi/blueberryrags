@@ -4,9 +4,8 @@ import { getServerSession } from "next-auth";
 import { authOptions } from "@/pages/api/auth/[...nextauth]";
 import { connectDB } from "@/util/database";
 import { ObjectId } from "mongodb";
-import CartItems from "../components/cartItems";
-import styles from "./cart.module.css";
 import { redirect } from "next/navigation";
+import CartClient from "./CartClient";
 
 export default async function Cart() {
   const session = await getServerSession(authOptions);
@@ -22,14 +21,5 @@ export default async function Cart() {
     productId: item.productId.toString()
   }));
 
-  return (
-    <div className={styles.container}>
-      <h2 className={styles.title}>CART</h2>
-      {cartItem.length === 0 ? (
-        <div>카트에 담긴 상품이 존재하지 않습니다.</div>
-      ) : (
-        <CartItems cartItem={cartItem} />
-      )}
-    </div>
-  );
+  return <CartClient cartItem={cartItem} />;
 }
