@@ -1,0 +1,17 @@
+.title{
+    text-align: center;
+}
+.container{
+    display: flex;
+    padding-top: 40px;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+}
+.noLogin{
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    margin-top: 80px;
+    align-items: center;
+}

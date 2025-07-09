@@ -1,0 +1,184 @@
+.container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.status {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 2rem;
+  text-align: center;
+  padding: 1rem;
+  background: #4863A0;
+  color: white;
+  border-radius: 8px;
+}
+
+.orderDetails {
+  background-color: #f8f9fa;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+  border-left: 4px solid #667eea;
+}
+
+.orderDetails p {
+  margin: 0.8rem 0;
+  color: #495057;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.orderNumber {
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+.totalAmount {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #e74c3c;
+}
+
+.paymentDate {
+  color: #6c757d;
+  font-size: 0.9rem;
+}
+
+.itemsSection {
+  margin-top: 2rem;
+}
+
+.itemsTitle {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #e9ecef;
+}
+
+.itemsList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.itemCard {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border: 1px solid #e9ecef;
+  border-radius: 8px;
+  background-color: #fff;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.itemCard:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.itemImage {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  margin-right: 1rem;
+  border-radius: 6px;
+  border: 1px solid #e9ecef;
+}
+
+.itemInfo {
+  flex: 1;
+}
+
+.itemTitle {
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 0.3rem;
+  font-size: 1rem;
+}
+
+.itemBrand {
+  color: #6c757d;
+  font-size: 0.9rem;
+  margin-bottom: 0.3rem;
+}
+
+.itemPrice {
+  color: #e74c3c;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.homeButton {
+  display: block;
+  width: 100%;
+  max-width: 200px;
+  margin: 2rem auto 0;
+  padding: 1rem 2rem;
+  background: #4863A0;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.homeButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+}
+
+.homeButton:active {
+  transform: translateY(0);
+}
+
+.loading {
+  text-align: center;
+  color: #6c757d;
+  font-size: 1.1rem;
+}
+
+.error {
+  text-align: center;
+  color: #e74c3c;
+  font-size: 1.1rem;
+  padding: 1rem;
+  background-color: #fdf2f2;
+  border-radius: 8px;
+  border: 1px solid #fecaca;
+}
+
+@media (max-width: 768px) {
+  .container {
+    margin: 20px;
+    padding: 1rem;
+  }
+  
+  .status {
+    font-size: 1.5rem;
+  }
+  
+  .itemCard {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .itemImage {
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+  
+  .homeButton {
+    max-width: 100%;
+  }
+}

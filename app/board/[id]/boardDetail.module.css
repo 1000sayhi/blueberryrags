@@ -1,0 +1,76 @@
+.container {
+    max-width: 800px;
+    margin: 60px auto;
+    padding: 30px;
+    background-color: #fff;
+  }
+  
+  .pageTitle {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+    color: #333;
+  }
+  
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 40px;
+    font-size: 1rem;
+    color: #444;
+  }
+  
+  .table th {
+    background-color: #f9f9f9;
+    width: 120px;
+    text-align: left;
+    padding: 10px;
+    border: 1px solid #e0e0e0;
+    font-weight: 500;
+  }
+  
+  .table td {
+    padding: 10px;
+    border: 1px solid #e0e0e0;
+  }
+  
+  .contentSection {
+    height: 50vh;
+    font-size: 1rem;
+  }
+  
+  .contentTitle {
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #888;
+  }
+  
+  .divider {
+    border: none;
+    border-top: 1px solid #e0e0e0;
+    margin-bottom: 20px;
+  }
+  
+  .contentBody {
+    line-height: 1.7;
+    color: #333;
+    white-space: pre-wrap;
+  }
+  
+  .backBtn {
+    display: block;
+    margin-left: auto;
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .backBtn:hover {
+    background-color: #333;
+  }
+  
